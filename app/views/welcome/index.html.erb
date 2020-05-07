@@ -1,0 +1,30 @@
+<div class="card text-center mb-3">
+  <div class="card-body">
+    <h5 class="card-title font-weight-bold">BIENVENUE <%=params[:id]%> !</h5>
+    <p class="card-text">Ici tu trouveras tous les potins de THP</p>
+    <a class="btn btn-dark" <%= link_to "Soumettre un Gossip", new_gossip_path%></a>
+  </div>
+</div>
+<section>
+
+<h2 class="text-center mb-3"> Les potins </h2>
+
+<div class="d-flex justify-content-around align-items-center flex-wrap">
+  <% @gossips.each_with_index do |g,id| %>
+
+  <div class="card mt-3 mb-3" style="width: 18rem;">
+    <div class="card-header">
+      <h5 class="card-title"><%=g.title%></h5>
+      <h6 class="card-subtitle mb-2 text-muted"><%=g.user.first_name %></h6>
+      <p class="card-text text-muted"><%=g.created_at %></p>
+    </div>
+    <div class="card-body">
+      <p class="card-text"><%=g.content[0..100] %>...</p>
+    </div>
+    <div class="card-footer">
+    <a href="/gossips/<%= id+1 %>" class="btn btn-warning">Gossip n° <%=id+1%></a>
+    </div>
+  </div>
+
+  <% end %>
+</div>
