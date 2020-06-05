@@ -1,21 +1,11 @@
-This README would normally document whatever steps are necessary to get the application up and running.
+# The Gossip Project
 
-Things you may want to cover:
+Bienvenue dans ma première application Rails qui déchire ! The Gossip Project.
 
-Ruby version
+Nous avons codé plusieurs pages : 
+- La page d'accueil, bien entendu. Cette page d'accueil affichera tous les potins créés
+- La page qui présente l'équipe de The Gossip Project
+- La page de contact
+- Une page de bienvenue, qui accueille l'utilisateur en fonction du nom passé dans l'URL
 
-System dependencies
-
-Configuration
-
-Database creation
-
-Database initialization
-
-How to run the test suite
-
-Services (job queues, cache servers, search engines, etc.)
-
-Deployment instructions
-
-...
+Dans la page d'accueil, il sera possible de cliquer sur chaque potin pour en "Voir plus", ce qui aura pour effet d'aller sur la page du potin.
